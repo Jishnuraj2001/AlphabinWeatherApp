@@ -10,7 +10,7 @@ login.addEventListener("submit",(event)=>{
 
 async function userLoginFn(obj){
     try {
-        let res=await fetch(`http://localhost:3400/login`,{
+        let res=await fetch(`https://alphabin-weather-backend.onrender.com/login`,{
             method:"POST",
             headers:{
                 "Content-Type":"Application/json"
@@ -20,7 +20,6 @@ async function userLoginFn(obj){
         let fin=await res.json();
         if(res.status==201){
             sessionStorage.setItem("token_user",fin.token);
-            sessionStorage.setItem("username",fin.username);
             alert(fin.msg);
             window.location.href="../html/weather.html";
         }else{

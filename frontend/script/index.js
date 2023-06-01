@@ -11,7 +11,7 @@ register.addEventListener("submit",(event)=>{
 
 async function userRegisterFn(obj){
     try {
-        let res=await fetch(`http://localhost:3400/register`,{
+        let res=await fetch(`https://alphabin-weather-backend.onrender.com/register`,{
             method:"POST",
             headers:{
                 "Content-Type":"Application/json"
@@ -21,7 +21,7 @@ async function userRegisterFn(obj){
         let fin=await res.json();
         if(res.status==201){
             alert(fin.msg);
-            window.location.href="../html/login.html";
+            window.location.href="./html/login.html";
         }else{
             alert(fin.msg);
         }

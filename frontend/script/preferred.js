@@ -9,7 +9,7 @@ getPreferredFn();
 
 async function getPreferredFn(){
     try {
-        let res=await fetch(`http://localhost:3400/preferred`,{
+        let res=await fetch(`https://alphabin-weather-backend.onrender.com/preferred`,{
             method:"GET",
             headers:{
                 "Content-Type":"application/json",

@@ -17,7 +17,7 @@ search_form.addEventListener("submit",(event)=>{
 
 async function getCurrentWeatherFn(city){
     try {
-        let res=await fetch(`http://localhost:3400/current?city=${city}`);
+        let res=await fetch(`https://alphabin-weather-backend.onrender.com/current?city=${city}`);
         if(res.ok){
             let ans=await res.json();
             renderCurrentFn(ans.data);
@@ -32,7 +32,7 @@ async function getCurrentWeatherFn(city){
 
 async function getForecastWeatherFn(city){
     try {
-        let res=await fetch(`http://localhost:3400/forecast?city=${city}`);
+        let res=await fetch(`https://alphabin-weather-backend.onrender.com/forecast?city=${city}`);
         if(res.ok){
             let ans=await res.json();
             renderForecastFn(ans.data);
@@ -76,7 +76,7 @@ document.querySelector(".add_btn").addEventListener("click",(event)=>{
 
 async function addPreferredFn(obj){
     try {
-        let res=await fetch(`http://localhost:3400/preferred`,{
+        let res=await fetch(`https://alphabin-weather-backend.onrender.com/preferred`,{
             method:"POST",
             headers:{
                 "Content-Type":"application/json",
