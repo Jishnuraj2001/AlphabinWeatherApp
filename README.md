@@ -7,7 +7,7 @@ This documentation provides an overview of the Weather API, which allows users t
 
 ### Base URL
 
-The base URL for the API is: `https://elated-housecoat-hen.cyclic.app`
+The base URL for the API is: `https://alphabin-weather-backend.onrender.com`
 
 
 ### User Endpoints
