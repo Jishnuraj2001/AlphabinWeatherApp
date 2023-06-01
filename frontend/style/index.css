@@ -80,15 +80,16 @@ header{
 }
 
 .btn{
-    background-color: tomato;
+    background-color: black;
     color: white;
-    border: none;
+    border:solid white 2px;
+    font-weight: bold;
+    font-size: 18px;
 }
 .btn:hover{
     cursor: pointer;
     background-color: rgb(182, 60, 38);
 }
-
 
 
 
