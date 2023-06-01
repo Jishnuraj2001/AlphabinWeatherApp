@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+<body>
+    <header>
+        <div class="logo">WEATHERAPP</div>
+        <input type="checkbox" id="hamburger">
+        <label class="hamburger" for="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+        <nav class="navbar">
+            <ul>
+                <li class="list"><a class="anchor" href="./index.html">SIGNUP</a></li>
+                <li class="list"><a class="anchor" href="./html/login.html">LOGIN</a></li>
+                <li class="list"><a class="anchor" href="./html/weather.html">WEATHER</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Register</h1>
+    <form id="register_form">
+        <input type="text" name="name" id="name" required placeholder="Enter username">
+        <input type="email" name="email" id="email" required placeholder="Enter email">
+        <input type="password" name="password" id="password" required placeholder="Enter password">
+        <input class="btn" type="submit" value="Register">
+    </form>
+</body>
+</html>
+<script src="./script/index.js"></script>
